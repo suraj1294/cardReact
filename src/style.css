@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+body{
+margin: 0;
+padding: 0;
+background-color:'#FFFF';
+font-family: Montserrat;
+
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 1px -1px 17px 9px rgba(0,0,0,0.12);
+}
+
+.card-top-container {
+    position: relative;
+    height: 333px;
+}
+
+.card  .text { 
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    left: 24px;
+    bottom: 72px;
+}
+
+.days {
+    position: absolute;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 14px;
+    bottom: 24px;
+    left: 24px;
+    color: white;
+    padding: 5px;
+    font-style: italic;
+}
+
+.button-container {
+    border-radius: 50%;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 24px;
+    bottom: -20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-container  .cotent {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.expanded {
+    transform: rotate(45deg);
+  }
+
+ .expandedtxt {
+    max-height: none !important;
+    transition: max-height 1.5s ease-in;
+  }
+
+.card-bottom-container {
+    padding: 24px; 
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 1.5s ease-in;
+}
+
+.bottom-text {
+    font-weight: 400;
+    font-size: 16px;
+   margin: auto;
+}
