@@ -22,12 +22,12 @@ font-family: Montserrat;
     box-shadow: 1px -1px 17px 9px rgba(0,0,0,0.12);
 }
 
-.card-top-container {
+.card .card-top-container {
     position: relative;
     height: 333px;
 }
 
-.card  .text { 
+.card-top-container .text { 
     position: absolute;
     color: white;
     font-size: 40px;
@@ -36,7 +36,7 @@ font-family: Montserrat;
     bottom: 72px;
 }
 
-.days {
+.card-top-container .days {
     position: absolute;
     background-color: red;
     border-radius: 5px;
@@ -48,7 +48,7 @@ font-family: Montserrat;
     font-style: italic;
 }
 
-.button-container {
+.card-top-container .button-container {
     border-radius: 50%;
     background-color: red;
     width: 40px;
@@ -67,24 +67,25 @@ font-family: Montserrat;
     font-size: 32px;
 }
 
-.expanded {
+.card-top-container  .expanded {
     transform: rotate(45deg);
   }
 
- .expandedtxt {
-    max-height: none !important;
-    transition: max-height 1.5s ease-in;
-  }
+
 
 .card-bottom-container {
     padding: 24px; 
-    max-height: 100px;
-    overflow: hidden;
-    transition: max-height 1.5s ease-in;
 }
 
-.bottom-text {
+.card-bottom-container  .content {
     font-weight: 400;
     font-size: 16px;
    margin: auto;
+   max-height: 100px;
+    overflow: hidden;    
+    text-align: justify;
 }
+.card-bottom-container  .expanded {
+    max-height: none !important;
+    transition: max-height 1.5s ease-in;
+  }
